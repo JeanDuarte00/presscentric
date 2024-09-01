@@ -1,0 +1,29 @@
+input CreateUserInput {
+    name: String
+    email: String!
+}
+
+input UpdateUserInput {
+    name: String
+    email: String
+}
+
+type User {
+    id: ID!
+    name: String
+    email: String!
+}
+
+type Mutation {
+    create(input: CreateUserInput!): User!
+    update(id: ID!, input: UpdateUserInput!): User!
+    delete(id: ID!): User!
+}
+
+type Query {
+    get(id: ID!): User
+    getAll: [User]!
+}
+
+
+
