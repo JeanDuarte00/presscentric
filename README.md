@@ -5,6 +5,7 @@
 
 #### To run application
 
+- Please, clone this project into your favorite folder
 - Make sure to be running on Unix based OS
 - In root folder, execute: `bash run.sh`
 - Once our application is running locally, click: [Play Ground](http://localhost:8081/graphiql?path=/graphql)
