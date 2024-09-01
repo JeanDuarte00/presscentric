@@ -7,7 +7,7 @@
 
 - Make sure to be running on Unix based OS
 - In root folder, execute: `bash run.sh`
-- Once our application is running locally, click: [Play Ground]("http://localhost:8081/graphiql?path=/graphql")
+- Once our application is running locally, click: [Play Ground](http://localhost:8081/graphiql?path=/graphql)
 
 #### Some queries and mutation for testing
 `mutation{update(id:"39cdbd92-bb13-4a93-bc0a-b504c3c84bf2",input:{name:"nome",email:"jean@gmail.com"}){id name email}}`
