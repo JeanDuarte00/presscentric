@@ -1,0 +1,13 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: assessement
+    graphql:
+      graphiql:
+        enabled: true
+  data:
+    mongodb:
+      uri: mongodb://guest:guest@localhost:27017/?authSource=admin
+      database: database

@@ -1,0 +1,55 @@
+Thanks again for attending our interview - it was nice to chat with you!
+
+Following up on the interview:
+
+What  we would  like to request is something you probably already very
+familiar  with  and saw this request quite a few times during your job
+hunting: a simple test project.
+
+Project requirements:
+
+A small back-end app that exposes one GraphQL Entity with queries and
+mutations for CRUD operation for a simple User object with the following
+3 fields:
+
+  - id
+  - email
+  - name
+
+To speed things up and make them a bit easier: the prepared GraphQL schema
+file is attached to this project description, which specs the objects
+and lists all operations.
+
+The tech specs/stack for the project:
+
+  Framework: Spring Framework/Latest
+  GQL:       DGS Framework
+  DAO:       Hibernate/JPA for DAO layer
+  Build:     We use/prefer gradle, but any buildable project would do
+
+NOTES
+
+No need for security or anything fancy for either project, but if you
+want to show off and impress in any way - feel free to do so. :)
+
+Make sure to document your application and mention how to run it.
+
+Tests are nice to have.
+
+A clean git commit timeline is a plus. We suggest Conventional Commits.
+
+DELIVERY
+
+The  preferred result is a project accompanied by a build script for a
+build tool of your choice which results in the app's .WAR file, which
+we can deploy and test (expected to run in tomcat 7+ container).
+
+The preferred method of delivery is a GitHub repository, but an email with
+a package would do just fine either.
+
+Please confirm the receipt of this email, as they sometimes get lost.
+
+If there are any questions about the assignment, you can reach out by
+replying to this email or emailing artur@presscentric.com
+
+Looking forward to your submission!
