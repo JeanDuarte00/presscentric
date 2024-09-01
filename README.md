@@ -26,4 +26,4 @@
 
 - I would add more testing, especially, integration with test containers (which is quite different to work in graphql compared to rest api)# presscentric
 
-More information about PressCentric can be found (here)[https://www.presscentric.com/]
+More information about PressCentric can be found [here](https://www.presscentric.com/)
