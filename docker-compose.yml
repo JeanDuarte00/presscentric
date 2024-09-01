@@ -1,0 +1,45 @@
+version: '3.8'
+
+volumes:
+  press-centric-mongo-db:
+
+networks:
+  press-centric-network:
+    driver: bridge
+
+services:
+
+  mongo-database:
+    image: mongo:6.0
+    container_name: mongo_database
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongosh localhost:27017/test --quiet
+      interval: 10s
+      timeout: 10s
+      retries: 5
+      start_period: 40s
+    env_file:
+      - ./environments/dev.env
+    restart: unless-stopped
+    networks:
+      - press-centric-network
+    ports:
+      - "27017:27017"
+    volumes:
+      - press-centric-mongo-db:/data/db
+
+  mongo-express:
+    image: mongo-express
+    container_name: mongo_express_ui
+    env_file:
+      - ./environments/dev.env
+    depends_on:
+      mongo-database:
+        condition: service_started
+    links:
+      - mongo-database
+    restart: unless-stopped
+    networks:
+      - press-centric-network
+    ports:
+      - "8083:8081"
